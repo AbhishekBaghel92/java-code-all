@@ -1,16 +1,16 @@
-package WhileLoop;
+package DoWhileLoop;
 
 public class PrintNumber {
     public static void main(String[] args) {
         int i = 5;
-        while (i >= 1) {
+        do {
             int j = 1;
-            while (j <= i) {
+            do {
                 System.out.print(i);
                 j++;
-            }
+            } while (j <= i);
             System.out.println();
             i--;
-        }
+        } while (i >= 1);
     }
 }
